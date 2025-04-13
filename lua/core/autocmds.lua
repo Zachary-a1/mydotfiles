@@ -1,7 +1,7 @@
 -- 高亮复制的内容
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
-        vim.highlight.on_yank({ timeout = 300 })
+        vim.highlight.on_yank({ timeout = 150 })
     end,
 })
 

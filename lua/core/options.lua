@@ -2,7 +2,7 @@ vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt         --opt是vim的选项接口
 
---开启鼠标支持
+-- 取消鼠标影响
 vim.o.mouse = "a"
 
 --防止中文输入光标消失
@@ -31,5 +31,4 @@ opt.splitbelow = true      --水平分割在下
 
 --系统剪贴板
 opt.clipboard = "unnamedplus" --系统剪贴板共享
-
 
