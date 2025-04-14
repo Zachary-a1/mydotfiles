@@ -3,8 +3,9 @@ vim.g.mapleader = " "  -- 设置<leader>为空格
 local map = vim.keymap.set  -- 快捷写法
 
 -- 基础操作
-map("n", "<leader>ww", ":w<CR>", { desc = "保存" })
-map("n", "<leader>qq", ":q!<CR>", { desc = "退出" })
+map("n", "<leader>ww", ":w<CR>", { desc = "save" })
+map("n", "<leader>wq", ":wq<CR>", { desc = "save and exit" })
+map("n", "<leader>qq", ":q!<CR>", { desc = "exit" })
 map("n", "<leader>qa", ":qa!<CR>", { desc = "close all windows and quit"})
 
 --map("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "文件树" })
